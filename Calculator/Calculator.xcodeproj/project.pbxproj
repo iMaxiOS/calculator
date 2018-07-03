@@ -59,7 +59,7 @@
 				1A0CAFAE20EBC29F002E74DA /* AppDelegate.swift */,
 				1A0CAFB020EBC29F002E74DA /* ViewController.swift */,
 				1A0CAFB220EBC29F002E74DA /* Main.storyboard */,
-				1A0CAFB520EBC29F002E74DA /* Assets.xcassets */,
+				1A0CAFBA20EBC29F002E74DA /* Info.plist */,
 				1A0CAFC020EBC658002E74DA /* Suporting Files */,
 			);
 			path = Calculator;
@@ -70,7 +70,7 @@
 			children = (
 				1A0CAFB720EBC29F002E74DA /* LaunchScreen.storyboard */,
 				1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */,
-				1A0CAFBA20EBC29F002E74DA /* Info.plist */,
+				1A0CAFB520EBC29F002E74DA /* Assets.xcassets */,
 			);
 			path = "Suporting Files";
 			sourceTree = "<group>";

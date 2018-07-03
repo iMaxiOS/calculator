@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,64 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldM-tg-1Mj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqS-Lq-Yob">
+                                <rect key="frame" x="15" y="153" width="345" height="246.66666666666663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDn-u2-xjP">
+                                <rect key="frame" x="15" y="423.66666666666669" width="345" height="246.33333333333331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-BV-5F7">
+                                <rect key="frame" x="15" y="694" width="345" height="60"/>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6MN-9n-6BD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="tcOffWhite"/>
+                        <constraints>
+                            <constraint firstItem="ldM-tg-1Mj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CUC-jE-g3q"/>
+                            <constraint firstItem="ldM-tg-1Mj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DzS-2S-62t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hh4-BV-5F7" secondAttribute="bottom" constant="24" id="E5o-5c-8Av"/>
+                            <constraint firstItem="hh4-BV-5F7" firstAttribute="top" secondItem="VDn-u2-xjP" secondAttribute="bottom" constant="24" id="N8D-GB-bZ1"/>
+                            <constraint firstItem="VDn-u2-xjP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="NrE-xD-cYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hh4-BV-5F7" secondAttribute="trailing" constant="15" id="PJb-tA-wVA"/>
+                            <constraint firstItem="SqS-Lq-Yob" firstAttribute="top" secondItem="ldM-tg-1Mj" secondAttribute="bottom" constant="24" id="ag1-oo-A2x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="ldM-tg-1Mj" secondAttribute="bottom" constant="-85" id="ejM-NR-PO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDn-u2-xjP" secondAttribute="trailing" constant="15" id="enZ-wq-SUU"/>
+                            <constraint firstItem="SqS-Lq-Yob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="igd-FO-Wgk"/>
+                            <constraint firstItem="VDn-u2-xjP" firstAttribute="top" secondItem="SqS-Lq-Yob" secondAttribute="bottom" constant="24" id="lzP-oq-vmo"/>
+                            <constraint firstItem="hh4-BV-5F7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="mEI-Ew-o7k"/>
+                            <constraint firstItem="VDn-u2-xjP" firstAttribute="height" secondItem="SqS-Lq-Yob" secondAttribute="height" id="qLW-qM-lyP"/>
+                            <constraint firstItem="ldM-tg-1Mj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tgb-Mj-zwS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SqS-Lq-Yob" secondAttribute="trailing" constant="15" id="xCg-TK-IYa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="108" y="111.99400299850076"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="tcDarkBlue">
+            <color red="0.0" green="0.0" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.92199999094009399" green="0.92000001668930054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
