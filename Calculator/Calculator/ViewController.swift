@@ -30,11 +30,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        billAmountTextField.buttonTapAction = {
+        setupViews()
+        
+        billAmountTextField.calculateButtonAction = {
             self.calculate()
         }
         
-        billAmountTextField.buttonTapAction = {
+        billAmountTextField.calculateButtonAction = {
             //dissmiss kyeboard
             if self.billAmountTextField.isFirstResponder {
                 self.billAmountTextField.resignFirstResponder()
@@ -56,6 +58,7 @@ class ViewController: UIViewController {
         self.billAmountTextField.text = String(format: "%.2f", roundedBillAmount)
         self.tipAmountLabel.text = String(format: "%.2f", roundedTipAmount)
         self.totalAmountLabel.text = String(format: "%.2f", totalAmount)
+        
         
         
     }
@@ -103,7 +106,20 @@ class ViewController: UIViewController {
     }
     
     func setupViews() {
-        //Noting yet
+        headerView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        headerView.layer.shadowOpacity = 0.05
+        headerView.layer.shadowColor = UIColor.black.cgColor
+        headerView.layer.shadowRadius = 35
+        
+        inputCardView.layer.cornerRadius = 8
+        inputCardView.layer.masksToBounds = true
+        
+        outputCardView.layer.borderWidth = 1
+        outputCardView.layer.borderColor = UIColor.tcHotPink.cgColor
+        outputCardView.layer.cornerRadius = 8
+        
+        resedButton.layer.cornerRadius = 8
+        resedButton.layer.masksToBounds = true
     }
     
     //MARK: - IBAction

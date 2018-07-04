@@ -11,7 +11,7 @@ import UIKit
 
 class BillAmountTextField: UITextField {
     
-    var buttonTapAction: (() -> Void)?
+    var calculateButtonAction: (() -> Void)?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -30,7 +30,7 @@ class BillAmountTextField: UITextField {
     }
     
     @objc func doneButtonTapped(_ sender: UIBarButtonItem) {
-        buttonTapAction?()
+        calculateButtonAction?()
     }
     
 }
