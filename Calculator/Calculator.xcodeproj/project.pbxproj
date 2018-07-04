@@ -13,6 +13,7 @@
 		1A0CAFB620EBC29F002E74DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAFB520EBC29F002E74DA /* Assets.xcassets */; };
 		1A0CAFB920EBC29F002E74DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAFB720EBC29F002E74DA /* LaunchScreen.storyboard */; };
 		1A0CAFC220EBC6BF002E74DA /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */; };
+		1A7593D320ECA97D0078E3B8 /* BillAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7593D220ECA97D0078E3B8 /* BillAmountTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A0CAFB820EBC29F002E74DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A0CAFBA20EBC29F002E74DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
+		1A7593D220ECA97D0078E3B8 /* BillAmountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAmountTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				1A0CAFB720EBC29F002E74DA /* LaunchScreen.storyboard */,
-				1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */,
 				1A0CAFB520EBC29F002E74DA /* Assets.xcassets */,
+				1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */,
+				1A7593D220ECA97D0078E3B8 /* BillAmountTextField.swift */,
 			);
 			path = "Suporting Files";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7593D320ECA97D0078E3B8 /* BillAmountTextField.swift in Sources */,
 				1A0CAFB120EBC29F002E74DA /* ViewController.swift in Sources */,
 				1A0CAFAF20EBC29F002E74DA /* AppDelegate.swift in Sources */,
 				1A0CAFC220EBC6BF002E74DA /* UIColor+TC.swift in Sources */,
