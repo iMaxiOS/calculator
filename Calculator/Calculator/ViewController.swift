@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: - Outlet`s
 
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var themeSwitch: UISwitch!
+    @IBOutlet weak var inputCardView: UIView!
+    @IBOutlet weak var billAmountTextField: UITextField!
+    @IBOutlet weak var tipPercentSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var outputCardView: UIView!
+    @IBOutlet weak var tipAmountTitleLabel: UIStackView!
+    @IBOutlet weak var tipAmountLabel: UIStackView!
+    @IBOutlet weak var totalAmountTitleLabel: UIStackView!
+    @IBOutlet weak var totalAmountLabel: UIStackView!
+    @IBOutlet weak var resedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +32,12 @@ class ViewController: UIViewController {
         
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        billAmountTextField.resignFirstResponder()
+    }
+    
+    //MARK: - IBAction
 
     @IBAction func themeToggled(_ sender: UISwitch) {
         if sender.isOn {
@@ -30,5 +47,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tipPercentChanged(_ sender: UISegmentedControl) {
+        
+    }
+    
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
+        print("resed Tapped")
+    }
 }
 
