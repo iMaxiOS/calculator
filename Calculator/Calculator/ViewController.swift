@@ -28,8 +28,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        billAmountTextField.buttonTapAction = {
+//            guard let billAmountText = self.billAmountTextField.text else { return }
+            print("Bill Amount: \(self.billAmountTextField.text ?? "Error")")
+        }
         
     }
     
