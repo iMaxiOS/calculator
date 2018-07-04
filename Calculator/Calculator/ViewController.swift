@@ -29,8 +29,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         billAmountTextField.buttonTapAction = {
-//            guard let billAmountText = self.billAmountTextField.text else { return }
-            print("Bill Amount: \(self.billAmountTextField.text ?? "Error")")
+            guard let billAmountText = self.billAmountTextField.text else { return }
+            print("Bill Amount: \(billAmountText)")
+//            print("Bill Amount: \(self.billAmountTextField.text ?? "Error")")
         }
         
     }
