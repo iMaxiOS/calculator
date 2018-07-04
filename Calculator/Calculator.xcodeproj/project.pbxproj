@@ -14,6 +14,7 @@
 		1A0CAFB920EBC29F002E74DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAFB720EBC29F002E74DA /* LaunchScreen.storyboard */; };
 		1A0CAFC220EBC6BF002E74DA /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */; };
 		1A7593D320ECA97D0078E3B8 /* BillAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7593D220ECA97D0078E3B8 /* BillAmountTextField.swift */; };
+		1A7593D520ECD61A0078E3B8 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7593D420ECD61A0078E3B8 /* ColorTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1A0CAFBA20EBC29F002E74DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0CAFC120EBC6BF002E74DA /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
 		1A7593D220ECA97D0078E3B8 /* BillAmountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAmountTextField.swift; sourceTree = "<group>"; };
+		1A7593D420ECD61A0078E3B8 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				1A0CAFAE20EBC29F002E74DA /* AppDelegate.swift */,
 				1A0CAFB020EBC29F002E74DA /* ViewController.swift */,
+				1A7593D420ECD61A0078E3B8 /* ColorTheme.swift */,
 				1A0CAFB220EBC29F002E74DA /* Main.storyboard */,
 				1A0CAFBA20EBC29F002E74DA /* Info.plist */,
 				1A0CAFC020EBC658002E74DA /* Suporting Files */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7593D320ECA97D0078E3B8 /* BillAmountTextField.swift in Sources */,
+				1A7593D520ECD61A0078E3B8 /* ColorTheme.swift in Sources */,
 				1A0CAFB120EBC29F002E74DA /* ViewController.swift in Sources */,
 				1A0CAFAF20EBC29F002E74DA /* AppDelegate.swift in Sources */,
 				1A0CAFC220EBC6BF002E74DA /* UIColor+TC.swift in Sources */,

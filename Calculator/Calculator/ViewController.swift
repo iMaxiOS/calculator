@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isDefaultStatusBar = true
+    
     //MARK: - Outlet`s
     
     @IBOutlet weak var headerView: UIView!
@@ -122,14 +124,38 @@ class ViewController: UIViewController {
         resedButton.layer.masksToBounds = true
     }
     
+    func setTheme(isDark: Bool) {
+        let theme = isDark ? ColorTheme.dark : ColorTheme.light
+        
+        view.backgroundColor = theme.viewControllerBackgroundColor
+        
+        headerView.backgroundColor = theme.primaryColor
+        titleLabel.textColor = theme.primatyTextColor
+        
+        inputCardView.backgroundColor = theme.secondaryColor
+        
+        billAmountTextField.tintColor = theme.accentColor
+        tipPercentSegmentedControl.tintColor = theme.accentColor
+        
+        outputCardView.backgroundColor = theme.primaryColor
+        outputCardView.layer.borderColor = theme.accentColor.cgColor
+        
+        tipAmountTitleLabel.textColor = theme.primatyTextColor
+        totalAmountTitleLabel.textColor = theme.primatyTextColor
+        
+        tipAmountLabel.textColor = theme.outputTextColor
+        totalAmountLabel.textColor = theme.outputTextColor
+        
+        resedButton.backgroundColor = theme.secondaryColor
+        
+        isDefaultStatusBar = theme.isDefaultStatusBar
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
     //MARK: - IBAction
     
     @IBAction func themeToggled(_ sender: UISwitch) {
-        if sender.isOn {
-            print("On")
-        } else {
-            print("Off")
-        }
+        setTheme(isDark: sender.isOn)
     }
     
     @IBAction func tipPercentChanged(_ sender: UISegmentedControl) {
@@ -139,5 +165,18 @@ class ViewController: UIViewController {
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         clear()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return isDefaultStatusBar ? .default : .lightContent
+    }
+    
 }
+
+
+
+
+
+
+
+
 
